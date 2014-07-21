@@ -119,7 +119,7 @@ proc containsOrIncl*(c: var TCritBitTree[void], key: string): bool =
   ## returns true iff `c` contains the given `key`. If the key does not exist
   ## it is inserted into `c`.
   let oldCount = c.count
-  var n = rawInsert(c, key)
+  discard rawInsert(c, key)
   result = c.count == oldCount
 
 proc incl*(c: var TCritBitTree[void], key: string) =
