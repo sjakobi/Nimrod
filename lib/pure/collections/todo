@@ -1,0 +1,12 @@
+Set operations:
+* initSet
+* toSet
+* `<`
+* `<=`
+* `==`
+* `map`
+
+* difference
+* union
+* intersection
+* symmetric difference

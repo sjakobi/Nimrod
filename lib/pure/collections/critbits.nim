@@ -284,6 +284,11 @@ proc `$`*[T](c: TCritBitTree[T]): string =
         result.add($val)
     result.add("}")
 
+# ------------------------------ crit bit set ---------------------------------
+
+type TCritBitSet* = TCritBitTree[void]
+
+
 when isMainModule:
   var r: TCritBitTree[void]
   r.incl "abc"
